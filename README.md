@@ -1,11 +1,11 @@
 # Platonic Solids Visualizer
 
-- Please note: this app is under construction. Not all features listed below may be present in the current version.
+Please note: this app is under construction. Not all features listed below may be present in the current version.
 
 ## Features
 
-- Adjustable panning and zooming
-- Customizable backgrounds associated with each solid's "element", according to Plato
+- Panning and zooming via mouse or keyboard
+- Interactive backgrounds associated with each solid
 - Toggleable auto-rotation with speed and axis control
 
 ## Running Locally
