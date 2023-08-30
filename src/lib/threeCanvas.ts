@@ -3,7 +3,8 @@ import {
   PerspectiveCamera,
   WebGLRenderer,
   DirectionalLight,
-  HemisphereLight
+  HemisphereLight,
+  Color
 } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -13,6 +14,7 @@ const defaultModel = 'dodecahedron';
 const modelPath = `src/lib/models/${defaultModel}/scene.gltf`;
 
 const scene = new Scene();
+scene.background = new Color('skyblue');
 const loader = new GLTFLoader();
 if (browser) {
   loader.load(
