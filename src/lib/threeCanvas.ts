@@ -6,9 +6,11 @@ import {
   HemisphereLight
 } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { browser } from '$app/environment';
 
-const modelPath = 'src/lib/models/octahedron/scene.gltf';
+const defaultModel = 'dodecahedron';
+const modelPath = `src/lib/models/${defaultModel}/scene.gltf`;
 
 const scene = new Scene();
 const loader = new GLTFLoader();
@@ -37,10 +39,12 @@ hemisphereLight.position.set(1, 1, 1);
 scene.add(hemisphereLight);
 
 let renderer:WebGLRenderer;
+let controls:OrbitControls;
 
 const animate = () => {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
+  controls.update();
 };
 
 const resize = () => {
@@ -53,6 +57,9 @@ const resize = () => {
 
 export const createScene = (canvasElement:HTMLCanvasElement) => {
   renderer = new WebGLRenderer({ antialias: true, canvas: canvasElement });
+  controls = new OrbitControls(camera, renderer.domElement);
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 3;
 	resize();
 	animate();
 };
