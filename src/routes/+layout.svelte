@@ -10,11 +10,11 @@
   </section>
 
   <nav>
-    <button class="rounded-l">tetrahedron</button>
-    <button>cube</button>
-    <button>octahedron</button>
-    <button>dodecahedron</button>
-    <button class="rounded-r">icosahedron</button>
+    <button class="rounded-l">Tetrahedron</button>
+    <button>Hexahedron</button>
+    <button>Octahedron</button>
+    <button>Dodecahedron</button>
+    <button class="rounded-r">Icosahedron</button>
   </nav>
 </header>
 
