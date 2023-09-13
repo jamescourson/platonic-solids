@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.3",
 		"three": "^0.155.0"
 	}
 }
