@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.3d0765cc.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.9275686e.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d988329a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.e108d1fd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e4e55851.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.fd3d9bfe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.5ae4157e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.71776598.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.0924d181.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <header class="svelte-174kuvi" data-svelte-h="svelte-1h0uv15"><section class="title svelte-174kuvi"><h1 class="text-lg rounded svelte-174kuvi">Platonic Solids</h1> <small>by <a href="https://courson.dev" class="text- hover:text-jg hover:underline">James Courson</a></small></section> <nav class="svelte-174kuvi"><button class="rounded-l svelte-174kuvi">Tetrahedron</button> <button class="svelte-174kuvi">Hexahedron</button> <button class="svelte-174kuvi">Octahedron</button> <button class="svelte-174kuvi">Dodecahedron</button> <button class="rounded-r svelte-174kuvi">Icosahedron</button></nav></header> <main class="svelte-zvyp6y"><canvas></canvas> </main> 
+			
+			<script>
+				{
+					__sveltekit_wdlkf2 = {
+						assets: "/platonic-solids",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":null,"uses":{}},null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.d988329a.js"),
+						import("./_app/immutable/entry/app.fd3d9bfe.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
